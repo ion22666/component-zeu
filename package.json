@@ -1,0 +1,16 @@
+{
+  "name": "component-zeu",
+  "version": "1.0.0",
+  "description": "useful components to use in vanilla js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "component",
+    "vanilla",
+    "js"
+  ],
+  "author": "giovanni and ford",
+  "license": "ISC"
+}
