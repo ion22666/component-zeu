@@ -1,0 +1,12 @@
+.z-button {
+	font-family: "Mukta";
+	color: white;
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.5rem;
+	border: 2px solid white;
+	background-color: black;
+	&:hover {
+		opacity: 0.5;
+		transition: 75ms ease-in;
+	}
+}

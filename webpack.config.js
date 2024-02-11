@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-	mode: "production",
+	mode: "development",
 	entry: "./src/index.ts", // entry point of your application
 	output: {
 		path: path.resolve(__dirname, "dist"),
@@ -15,6 +15,17 @@ module.exports = {
 				use: {
 					loader: "swc-loader", // use swc-loader for handling TypeScript/JavaScript files
 				},
+			},
+			{
+				test: /\.s[ac]ss$/i,
+				use: [
+					// Creates `style` nodes from JS strings
+					"style-loader",
+					// Translates CSS into CommonJS
+					"css-loader",
+					// Compiles Sass to CSS
+					"sass-loader",
+				],
 			},
 		],
 	},
@@ -35,4 +46,5 @@ module.exports = {
 		compress: true,
 		port: 9000,
 	},
+	cache: false,
 };
