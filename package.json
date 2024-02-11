@@ -4,6 +4,8 @@
 	"description": "useful components to use in vanilla js",
 	"main": "dist/index.js",
 	"scripts": {
+		"dev": "npx webpack serve",
+		"build": "npx webpack --mode=production",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
@@ -21,8 +23,11 @@
 		"@swc/core": "^1.4.0",
 		"@types/webpack": "^5.28.5",
 		"@types/webpack-dev-server": "^4.7.2",
+		"css-loader": "^6.10.0",
+		"sass": "^1.70.0",
+		"sass-loader": "^14.1.0",
+		"style-loader": "^3.3.4",
 		"swc-loader": "^0.2.6",
-		"ts-loader": "^9.5.1",
 		"typescript": "^5.3.3",
 		"webpack": "^5.90.1",
 		"webpack-cli": "^5.1.4"
